@@ -1,0 +1,27 @@
+/* CalButton.css */
+.cal-schedule-button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 9999px; /* Fully rounded edges */
+  padding: 1rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: var(--font-sans, sans-serif); /* Use a project-defined font or a fallback */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
+  display: inline-block; /* Ensures proper spacing and alignment */
+}
+
+.cal-schedule-button:hover {
+  transform: scale(1.05); /* Subtle scale effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .cal-schedule-button {
+    width: 100%; /* Make button full-width on smaller screens */
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,122 @@
+.work-section {
+  padding: 6rem 0;
+  background-color: var(--color-dark-gray);
+  overflow: hidden;
+}
+
+.section-heading {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: var(--color-primary);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-370px * 4)); /* Card width (350px) + gap (20px) * number of original cards (4) */
+  }
+}
+
+.work-carousel-wrapper {
+  overflow: hidden;
+  padding: 2rem 0;
+  -webkit-mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+  mask-image: linear-gradient(to right, transparent, white 20%, white 80%, transparent);
+}
+
+.work-carousel {
+  display: flex;
+  gap: 2rem;
+  width: calc(370px * 8); /* Card width + gap * total number of cards */
+  animation: scroll 30s linear infinite;
+}
+
+.work-carousel-wrapper:hover .work-carousel {
+  animation-play-state: paused;
+}
+
+.work-card {
+  position: relative;
+  flex: 0 0 350px; /* Fixed width for cards */
+  height: 450px;
+  background-color: var(--color-light-gray);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-10px);
+}
+
+.work-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.4s ease;
+}
+
+.work-card:hover .work-card-img {
+  opacity: 0.2;
+}
+
+.work-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.5rem;
+  color: var(--color-primary);
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+}
+
+.work-card:hover .work-card-content {
+  transform: translateY(0);
+}
+
+.work-card-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.live-demo-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-background);
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.4s ease;
+}
+
+.work-card:hover .live-demo-btn {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .work-card {
+    flex: 0 0 300px;
+    height: 400px;
+  }
+  .section-heading {
+    font-size: 2.5rem;
+  }
+}
