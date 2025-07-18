@@ -4,31 +4,30 @@ import './Work.css';
 const staticProjects = [
   {
     _id: '1',
-    title: "shopmenia",
+    title: "Shopmenia",
     description: "A full stack e-commerce website with admin panel",
     projectUrl: "https://github.com/RAMANP-007/shopmenia",
     liveDemoUrl: "https://shopmenia.vercel.app/",
-    imageUrl: "/images/Shopmenia.png", // Matches public/images/Shopmenia.png
+    imageUrl: "/images/Shopmenia.png",
   },
   {
     _id: '2',
-    title: "eve-cafe",
+    title: "Eve Cafe",
     description: "A basic website for a cafe with email messaging feature",
     projectUrl: "https://github.com/RAMANP-007/eve-cafe",
     liveDemoUrl: "https://eve-cafe.vercel.app/",
-    imageUrl: "/images/eve-cafe.png", // Matches public/images/eve-cafe.png
+    imageUrl: "/images/eve-cafe.png",
   },
   {
     _id: '3',
-    title: "balarambati-homeohall",
+    title: "Balrambati Homeohall",
     description: "A modern and responsive homeopathy clinic website",
     projectUrl: "https://github.com/RAMANP-007/balarambati-homeohall",
     liveDemoUrl: "https://balarambati-homeohall.vercel.app/",
-    imageUrl: "/images/Balrambati.png", // Matches public/images/Balrambati.png
+    imageUrl: "/images/Balrambati.png",
   },
 ];
 
-// Duplicate data for seamless carousel
 const duplicatedWorkData = [...staticProjects, ...staticProjects];
 
 const Work = () => {
