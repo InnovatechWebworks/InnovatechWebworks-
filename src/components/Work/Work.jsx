@@ -8,7 +8,7 @@ const staticProjects = [
     description: "A full stack e-commerce website with admin panel",
     projectUrl: "https://github.com/RAMANP-007/shopmenia",
     liveDemoUrl: "https://shopmenia.vercel.app/",
-    imageUrl: "/images/screenshot-2025-07-16-171845.png",
+    imageUrl: "/images/Shopmenia.png", // Matches public/images/Shopmenia.png
   },
   {
     _id: '2',
@@ -16,15 +16,15 @@ const staticProjects = [
     description: "A basic website for a cafe with email messaging feature",
     projectUrl: "https://github.com/RAMANP-007/eve-cafe",
     liveDemoUrl: "https://eve-cafe.vercel.app/",
-    imageUrl: "/images/eve-cafe.png",
+    imageUrl: "/images/eve-cafe.png", // Matches public/images/eve-cafe.png
   },
   {
     _id: '3',
     title: "balarambati-homeohall",
     description: "A modern and responsive homeopathy clinic website",
-    projectUrl: "https://github.com/RAMANP-007/balarambati-homeohall", // change if repo is private or different
+    projectUrl: "https://github.com/RAMANP-007/balarambati-homeohall",
     liveDemoUrl: "https://balarambati-homeohall.vercel.app/",
-    imageUrl: "/images/screenshot-2025-07-18-163120.png",
+    imageUrl: "/images/Balrambati.png", // Matches public/images/Balrambati.png
   },
 ];
 
@@ -41,7 +41,11 @@ const Work = () => {
         <div className="work-carousel">
           {duplicatedWorkData.map((project, index) => (
             <div className="work-card" key={`${project._id}-${index}`}>
-              <img src={project.imageUrl} alt={project.title} className="work-card-img" />
+              <img
+                src={project.imageUrl}
+                alt={project.title}
+                className="work-card-img"
+              />
               <div className="work-card-content">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>
