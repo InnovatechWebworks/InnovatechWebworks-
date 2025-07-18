@@ -26,6 +26,14 @@ const staticProjects = [
     liveDemoUrl: "https://balarambati-homeohall.vercel.app/",
     imageUrl: "/images/Balrambati.png",
   },
+  {
+    _id: '4',
+    title: "Salonluxe",
+    description: "A stylish salon website with appointment-ready interface",
+    projectUrl: "https://github.com/RAMANP-007/Salonluxe",
+    liveDemoUrl: "https://salonluxe.vercel.app/",
+    imageUrl: "/images/Salonluxe.png",
+  },
 ];
 
 const duplicatedWorkData = [...staticProjects, ...staticProjects];
