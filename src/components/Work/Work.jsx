@@ -8,7 +8,7 @@ const staticProjects = [
     description: "A full stack e-commerce website with admin panel",
     projectUrl: "https://github.com/RAMANP-007/shopmenia",
     liveDemoUrl: "https://shopmenia.vercel.app/",
-    imageUrl: "/images/Screenshot%202025-07-16%20171845.png", // path from public folder
+    imageUrl: "/images/screenshot-2025-07-16-171845.png",
   },
   {
     _id: '2',
@@ -16,8 +16,16 @@ const staticProjects = [
     description: "A basic website for a cafe with email messaging feature",
     projectUrl: "https://github.com/RAMANP-007/eve-cafe",
     liveDemoUrl: "https://eve-cafe.vercel.app/",
-    imageUrl: "/images/eve-cafe.png", // path from public folder
-  }
+    imageUrl: "/images/eve-cafe.png",
+  },
+  {
+    _id: '3',
+    title: "balarambati-homeohall",
+    description: "A modern and responsive homeopathy clinic website",
+    projectUrl: "https://github.com/RAMANP-007/balarambati-homeohall", // change if repo is private or different
+    liveDemoUrl: "https://balarambati-homeohall.vercel.app/",
+    imageUrl: "/images/screenshot-2025-07-18-163120.png",
+  },
 ];
 
 // Duplicate data for seamless carousel
